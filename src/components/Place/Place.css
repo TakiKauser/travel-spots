@@ -1,0 +1,19 @@
+.spot-card {
+  padding: 15px;
+  border: 1px solid grey;
+  border-radius: 3px;
+}
+.spot-card img {
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+}
+.add-to-list-btn {
+  color: white;
+  background-color: black;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: 3px dotted white;
+  border-radius: 5px;
+  cursor: pointer;
+}

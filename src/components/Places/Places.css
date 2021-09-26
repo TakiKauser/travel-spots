@@ -1,0 +1,16 @@
+.places-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    /* grid-gap: 10px; */
+    margin: 40px;
+}
+.place-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    grid-row-gap: 30px;
+}
+.spot-list-container{
+    color: white;
+    background-color: black;
+}
