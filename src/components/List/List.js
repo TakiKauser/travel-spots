@@ -11,6 +11,7 @@ const List = (props) => {
         totalCost += selectedSpot.cost;
     }
     return (
+        // selected spots enlisted and calculated cost in cart or list
         <div className="list">
             <h2>Selected Spots: {enlistedSpot.length}</h2>
             <h4>Spot List</h4>

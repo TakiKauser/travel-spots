@@ -21,6 +21,7 @@ const Places = () => {
 
     return (
         <div className="places-container">
+            {/* spots displayed */}
             <div className="place-container">
                 {
                     spots.map(spot => <Place
@@ -30,6 +31,7 @@ const Places = () => {
                     />)
                 }
             </div>
+            {/* selected spot list */}
             <div className="spot-list-container">
                 <List
                     enlistedSpot={enlistedSpot}

@@ -5,6 +5,7 @@ const EnlistedSpot = (props) => {
     // destructuring
     const { spot } = props.selectedSpot;
     return (
+        // selected spot is displayed in UI
         <div className="selected-spot">
             <h5>{spot}</h5>
         </div>

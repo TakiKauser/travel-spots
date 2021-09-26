@@ -7,6 +7,7 @@ const Place = (props) => {
     // destructuring properties
     const { spot, image, distance, cost, category, location, division } = props.spot;
     return (
+        // single spot informations in card
         <div className="spot-card" style={{ width: '20rem' }}>
             <div>
                 <img src={image} alt="" />
