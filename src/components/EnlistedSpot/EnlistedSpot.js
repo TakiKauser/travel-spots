@@ -2,11 +2,11 @@ import React from 'react';
 import './EnlistedSpot.css';
 
 const EnlistedSpot = (props) => {
-    const { selectedSpot } = props;
-    // console.log(spot);
+    // destructuring
+    const { spot } = props.selectedSpot;
     return (
         <div className="selected-spot">
-            <h5>{selectedSpot.spot}</h5>
+            <h5>{spot}</h5>
         </div>
     );
 };

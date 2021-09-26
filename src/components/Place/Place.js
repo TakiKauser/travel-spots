@@ -4,8 +4,8 @@ import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
 import './Place.css';
 
 const Place = (props) => {
+    // destructuring properties
     const { spot, image, distance, cost, category, location, division } = props.spot;
-    // console.log(props.spot);
     return (
         <div className="spot-card" style={{ width: '20rem' }}>
             <div>
@@ -17,7 +17,12 @@ const Place = (props) => {
                 <p>Distance from Dhaka: {distance}(km)</p>
                 <p>Category: {category}</p>
                 <h3>Cost: {cost}</h3>
-                <button className="add-to-list-btn" onClick={() => props.handleSpotList(props.spot)}><FontAwesomeIcon icon={faCartPlus} /> Add to List</button>
+                <button
+                    className="add-to-list-btn"
+                    onClick={() => props.handleSpotList(props.spot)}>
+                    <FontAwesomeIcon icon={faCartPlus} />
+                    Add to List
+                </button>
             </div>
         </div>
     );

@@ -4,17 +4,17 @@ import Place from '../Place/Place';
 import './Places.css';
 
 const Places = () => {
+    // useState
     const [spots, setSpots] = useState([]);
     const [enlistedSpot, setEnlistedSpot] = useState([]);
-
+    // fetch data inside useEffect
     useEffect(() => {
         fetch("./customDB.JSON")
             .then(response => response.json())
             .then(jsonData => setSpots(jsonData))
     }, []);
-
+    // onclick handler
     const handleSpotList = (spot) => {
-        // console.log(spot.spot);
         const spotList = [...enlistedSpot, spot];
         setEnlistedSpot(spotList);
     }
@@ -22,7 +22,6 @@ const Places = () => {
     return (
         <div className="places-container">
             <div className="place-container">
-                {/* <h3>Places: {spots.length}</h3> */}
                 {
                     spots.map(spot => <Place
                         key={spot.key}

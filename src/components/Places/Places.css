@@ -1,7 +1,6 @@
 .places-container{
     display: grid;
     grid-template-columns: 4fr 1fr;
-    /* grid-gap: 10px; */
     margin: 40px;
 }
 .place-container{
@@ -11,7 +10,5 @@
     grid-row-gap: 30px;
 }
 .spot-list-container{
-    /* color: white;
-    background-color: black; */
-    border-left: 1px solid grey;
+    border-left: 1px solid rgba(128, 128, 128, 0.192);
 }

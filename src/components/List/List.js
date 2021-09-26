@@ -3,14 +3,13 @@ import EnlistedSpot from '../EnlistedSpot/EnlistedSpot';
 import './List.css';
 
 const List = (props) => {
+    // destructuring
     const { enlistedSpot } = props;
-    // console.log(props);
-
+    // calculate travel expense as total cost 
     let totalCost = 0;
     for (const selectedSpot of enlistedSpot) {
         totalCost += selectedSpot.cost;
     }
-
     return (
         <div className="list">
             <h2>Selected Spots: {enlistedSpot.length}</h2>
