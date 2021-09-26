@@ -2,15 +2,16 @@
   padding: 15px;
   border: 1px solid grey;
   border-radius: 3px;
+  box-shadow: 15px 15px 15px grey;
 }
 .spot-card img {
   width: 300px;
   height: 200px;
-  border-radius: 5px;
+  border-radius: 1%;
 }
 .add-to-list-btn {
   color: white;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.575);
   font-weight: 600;
   padding: 10px 20px;
   border: 3px dotted white;

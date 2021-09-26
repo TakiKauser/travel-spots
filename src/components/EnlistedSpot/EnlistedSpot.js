@@ -5,7 +5,7 @@ const EnlistedSpot = (props) => {
     const { selectedSpot } = props;
     // console.log(spot);
     return (
-        <div>
+        <div className="selected-spot">
             <h5>{selectedSpot.spot}</h5>
         </div>
     );

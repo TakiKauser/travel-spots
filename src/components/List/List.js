@@ -14,14 +14,14 @@ const List = (props) => {
     return (
         <div className="list">
             <h2>Selected Spots: {enlistedSpot.length}</h2>
-            <h3>Spot List</h3>
+            <h4>Spot List</h4>
             {
                 enlistedSpot.map(selectedSpot => <EnlistedSpot
                     key={selectedSpot.key}
                     selectedSpot={selectedSpot}
                 />)
             }
-            <h2>Travel Expense: {totalCost}</h2>
+            <h3>Travel Expense: ${totalCost}</h3>
         </div>
     );
 };

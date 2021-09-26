@@ -11,6 +11,7 @@
     grid-row-gap: 30px;
 }
 .spot-list-container{
-    color: white;
-    background-color: black;
+    /* color: white;
+    background-color: black; */
+    border-left: 1px solid grey;
 }
