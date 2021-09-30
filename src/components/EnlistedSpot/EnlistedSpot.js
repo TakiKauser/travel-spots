@@ -7,6 +7,7 @@ const EnlistedSpot = (props) => {
     return (
         // selected spot is displayed in UI
         <div className="selected-spot">
+            <img src={props.selectedSpot.image} alt="" />
             <h5>{spot}</h5>
         </div>
     );

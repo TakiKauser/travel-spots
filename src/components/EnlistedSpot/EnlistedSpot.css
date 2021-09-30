@@ -1,4 +1,13 @@
-.selected-spot{
-    border: 1px dotted grey;
-    margin-bottom: 3px;
+.selected-spot {
+  border: 1px dotted grey;
+  margin-bottom: 3px;
+  box-shadow: 15px 15px 15px grey;
+  display: flex;
+  margin: 10px 0;
+}
+.selected-spot img {
+  width: 120px;
+  height: 70px;
+  margin-right: 5px;
+  object-fit: cover;
 }
